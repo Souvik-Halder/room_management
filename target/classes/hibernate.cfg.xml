@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "C:\Users\Souvik.Halder\Downloads\hibernate-configuration-3.0 (1).dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/registration_systemdb</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">cfg@1234</property>
+
+		<property name="hbm2ddl.auto">update</property>
+		<!-- JDBC connection pool settings ... using built-in test pool -->
+		<property name="connection.pool_size">1</property>
+		<property name="hibernate.hikari.minimumIdle">5</property>
+		<property name="hibernate.hikari.maximumPoolSize">50</property> <!-- Adjust based on your requirements -->
+		<property name="hibernate.hikari.idleTimeout">30000</property>
+		<property name="hibernate.hikari.poolName">MyHikariCP</property>
+		<property name="hibernate.hikari.connectionTimeout">30000</property>
+		<property name="hibernate.hikari.maxLifetime">600000</property>
+		<!-- Echo the SQL to stdout -->
+		<property name="show_sql">true</property>
+		<mapping class="com.room_management.entity.Room" />
+		<mapping class="com.room_management.entity.Room_category" />
+		<mapping class="com.room_management.entity.Employee" />
+	</session-factory>
+</hibernate-configuration>

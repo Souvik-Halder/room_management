@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Register_Room</servlet-name>
+  	<display-name>Register_Room</display-name>
+  	<description></description>
+  	<servlet-class>com.romm_management.servlet.Register_Room</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Register_Category</servlet-name>
+  	<display-name>Register_Category</display-name>
+  	<description></description>
+  	<servlet-class>com.romm_management.servlet.Register_Category</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Employee_sevlet</servlet-name>
+  	<display-name>Employee_sevlet</display-name>
+  	<description></description>
+  	<servlet-class>com.romm_management.servlet.Employee_sevlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Register_Room</servlet-name>
+  	<url-pattern>/Register_Room</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Register_Category</servlet-name>
+  	<url-pattern>/Register_Category</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Employee_sevlet</servlet-name>
+  	<url-pattern>/Employee_sevlet</url-pattern>
+  </servlet-mapping>
+</web-app>
